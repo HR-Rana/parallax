@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zoom, Parallax, Blur Effects For Image Demo</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p { margin:20px;}
+
+body {
+  width: 100%;
+ *zoom: 1;
+  display: block;
+  overflow-x: hidden;
+}
+
+body:before, body:after {
+  content: "";
+  display: table;
+}
+
+body:after { clear: both; }
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 1.125;
+  text-align:center;
+}
+
+.contained {
+  margin: 0 auto;
+  width: 90%;
+}
+@media (min-width: 500px) {
+
+.contained { width: 80%; }
+}
+@media (min-width: 600px) {
+
+.contained { width: 60%; }
+}
+
+main {
+  padding: 1em 0;
+  position: relative;
+  background: #434A53;
+  color:#fff;
+  box-shadow: 0px -10px 60px rgba(0, 0, 0, 0.25);
+}
+
+header {
+  overflow: hidden;
+  padding-bottom: 55%;
+}
+@media (min-width: 600px) {
+
+header { padding-bottom: 50%; }
+}
+@media (min-width: 700px) {
+
+header { padding-bottom: 45%; }
+}
+
+header img {
+  width: 100%;
+  max-width: none;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+</style>
+</head>
+
+<body>
+<header class="parallax-zoom-blur"> <img src="https://unsplash.it/1800/1200?image=883"> </header>
+<main role="main">
+  <div class="contained">
+    <h1>Zoom, Parallax, Blur Effects For Image</h1>
+    <div class="jquery-script-ads" style="margin-top:20px;" align="center"><script type="text/javascript">
+    google_ad_client = "ca-pub-2783044520727903";
+    google_ad_slot = "2780937993";
+    google_ad_width = 728;
+    google_ad_height = 90;
+</script>
+<!-- jQuery_demo -->
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie accumsan est, in aliquam velit cursus quis. Nam bibendum vel orci a finibus. Etiam eu velit justo. Donec sollicitudin accumsan odio in cursus. Integer quis tempor nunc. Nam egestas orci euismod, condimentum nibh vitae, dignissim turpis. Donec dapibus, eros ac hendrerit ullamcorper, massa enim faucibus nunc, in pharetra elit ipsum eget nibh. Maecenas elementum, ipsum porttitor convallis laoreet, augue diam finibus elit, vitae vehicula nisl sem eget quam. Maecenas sollicitudin erat eget nunc faucibus, sit amet luctus ligula mattis.</p>
+    <p>Aliquam blandit non tellus a faucibus. Vivamus quis ipsum sagittis, ultricies diam semper, posuere felis. Nam ultricies elit ut mi lacinia dapibus. Ut sit amet purus erat. Aenean at risus laoreet, bibendum sapien et, efficitur turpis. Proin viverra et ex sit amet aliquet. Duis finibus est ac nulla varius consectetur. Vivamus cursus gravida maximus. Mauris ex velit, fringilla eget eros vitae, rutrum accumsan velit. Aenean velit enim, dictum ut ipsum sit amet, accumsan vestibulum augue. Vivamus eget risus id erat ornare porta non maximus quam. Praesent sodales condimentum dui, ut congue erat volutpat eu.</p>
+    <p>Nunc vitae nibh consectetur, porta ligula in, congue nisl. Phasellus accumsan viverra nisl non rhoncus. Quisque elit nisl, auctor vitae est in, rhoncus varius lacus. Sed accumsan efficitur arcu, sit amet lacinia arcu aliquam nec. Pellentesque faucibus, ante sit amet ornare hendrerit, orci ex pharetra magna, a eleifend justo leo vel purus. Mauris at ex fringilla, facilisis orci eu, accumsan est. Etiam ut massa in arcu tempus tristique. Suspendisse ac mollis ante, a condimentum ante. Etiam interdum purus eu eros porta semper. In velit dolor, finibus facilisis efficitur at, lobortis vel ligula.</p>
+    <p>Aliquam elit magna, volutpat in viverra et, imperdiet vel eros. Sed facilisis, nunc vitae ultrices mollis, purus nisl sollicitudin neque, non convallis velit purus consectetur dui. Donec non dapibus enim. Ut nibh purus, pulvinar id ligula eget, feugiat interdum turpis. Etiam at turpis erat. Aenean vitae ultrices neque. Phasellus consectetur, odio et laoreet egestas, magna purus pulvinar dolor, quis accumsan mi ligula eget tellus. Praesent velit eros, iaculis quis dictum in, convallis id leo. Nam leo felis, placerat et ultricies sit amet, pulvinar eu nisi. Donec accumsan malesuada erat dictum pulvinar. Proin viverra orci ut tincidunt commodo. Sed ut aliquet nisi. Cras ultrices quam eu ipsum venenatis venenatis.</p>
+    <p>Aenean in sollicitudin mauris. Morbi accumsan imperdiet hendrerit. Aenean eget rhoncus eros. Suspendisse ultricies eros id gravida malesuada. Duis in commodo diam, fringilla pretium est. Sed dictum placerat libero, vel tempus odio bibendum tincidunt. Proin ornare metus quis ex rutrum, ut mollis quam consequat. Proin velit nisl, semper id accumsan eget, dignissim sed turpis. Duis imperdiet orci vel nunc dictum pretium.</p>
+  </div>
+</main>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+<script>
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+	$(".parallax-zoom-blur img").css({
+		width: (100 + scroll/5)  + "%",
+		top: -(scroll/10)  + "%",
+		//Blur suggestion from @janwagner: http://codepen.io/janwagner/ in comments
+		"-webkit-filter": "blur(" + (scroll/100) + "px)",
+		filter: "blur(" + (scroll/100) + "px)"
+	});
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

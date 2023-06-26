@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Parallaxmouse Pluign Demo</title>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../dist/jquery.parallaxmouse.min.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper {
+            width: 100%;
+            height: 400px;
+            max-height: 400px;
+            position: relative;
+            margin-top: 150px;
+            background: #2f2f6d;
+            overflow: hidden;
+        }
+        .parallax {
+            position: absolute;
+        }
+        #warpbg {
+            top: -200px;
+            left: -350px;
+        }
+        #star1 {
+            top: 150px;
+            right: 200px;
+        }
+        #star2 {
+            top: 220px;
+            right: 500px;
+        }
+        #star3 {
+            bottom: 20px;
+            right: 20px;
+        }
+        #star4 {
+            top: 40px;
+            left: 290px;
+        }
+        #star5 {
+            bottom: 138px;
+            left: 170px;
+        }
+        #planet {
+            top: -103px;
+            left: -103px;
+        }
+        #robot {
+            top: 200px;
+            right: 250px;
+        }
+        #astronaut {
+            top: 220px;
+            right: 100px;
+        }
+        #asteroid {
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/animation/jQuery-Plugin-For-Interactive-Multi-layer-Parallax-Effect-Parallaxmouse.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div id="wrapper">
+    <img id="warpbg" class="parallax left top" src="images/warpbg.png">
+    <img id="star1" class="parallax top" src="images/star1.png">
+    <img id="star2" class="parallax top" src="images/star2.png">
+    <img id="star3" class="parallax" src="images/star3.png">
+    <img id="star4" class="parallax left top" src="images/star4.png">
+    <img id="star5" class="parallax left" src="images/star5.png">
+    <img id="planet" class="parallax left top" src="images/planet.png">
+    <img id="robot" class="parallax top" src="images/robot.png">
+    <img id="astronaut" class="parallax top" src="images/astronaut.png">
+    <img id="asteroid" class="parallax" src="images/asteroid.png">
+</div>
+
+<script>
+    // Plugin Test
+    $(window).parallaxmouse({
+        invert: true,
+        range: 400,
+        elms: [
+            {el: $('#warpbg'), rate: 0.1},
+            {el: $('#star1'), rate: 0.2},
+            {el: $('#star2'), rate: 0.2},
+            {el: $('#star3'), rate: 0.2},
+            {el: $('#star4'), rate: 0.2},
+            {el: $('#star5'), rate: 0.2},
+            {el: $('#planet'), rate: 0.3},
+            {el: $('#robot'), rate: 0.4},
+            {el: $('#astronaut'), rate: 0.48},
+            {el: $('#asteroid'), rate: 0.7}
+        ]
+    });
+</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
